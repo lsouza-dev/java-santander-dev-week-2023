@@ -20,9 +20,9 @@ public class Account {
     private String Number;
     private String Agency;
 
-    @Column(scale = 13,precision = 2)
+    @Column(precision = 13,scale=2)
     private BigDecimal Balance;
 
-    @Column(scale = 13,precision = 2,name = "additional_limit")
+    @Column(precision = 13,scale=2,name = "additional_limit")
     private BigDecimal Limit;
 }
