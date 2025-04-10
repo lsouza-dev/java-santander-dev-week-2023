@@ -14,15 +14,15 @@ import java.math.BigDecimal;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
 
     @Column(unique = true)
-    private String Number;
-    private String Agency;
+    private String number;
+    private String agency;
 
     @Column(precision = 13,scale=2)
-    private BigDecimal Balance;
+    private BigDecimal balance;
 
     @Column(precision = 13,scale=2,name = "additional_limit")
-    private BigDecimal Limit;
+    private BigDecimal limit;
 }

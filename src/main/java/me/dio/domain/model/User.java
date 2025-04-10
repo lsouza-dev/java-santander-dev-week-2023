@@ -14,18 +14,18 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-    private String Name;
+    private Long id;
+    private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Account Account;
+    private Account account;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Card Card;
+    private Card card;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Feature> Features;
+    private List<Feature> features;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<News> News;
+    private List<News> news;
 }

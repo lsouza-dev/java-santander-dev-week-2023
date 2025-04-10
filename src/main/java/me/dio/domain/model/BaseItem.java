@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public abstract class BaseItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-    private String Icon;
-    private String Description;
+    private Long id;
+    private String icon;
+    private String description;
 }

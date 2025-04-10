@@ -14,10 +14,10 @@ import java.math.BigDecimal;
 public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     @Column(unique = true)
-    private String Number;
+    private String number;
 
     @Column(precision = 13,scale=2,name = "avaliable_limit")
-    private BigDecimal Limit;
+    private BigDecimal limit;
 }
