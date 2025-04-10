@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create # ou update se não quiser apagar dados
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.tool.hbm2ddl: debug
+    org.hibernate.engine.jdbc.env.internal: debug
